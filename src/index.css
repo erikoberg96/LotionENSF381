@@ -1,0 +1,81 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  margin: 0; 
+  padding: 0; 
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.items:hover , #topBar button:hover {
+  background-color: darkmagenta;
+}
+
+.items {
+  height: 25px;
+  /* max-width: 10px; */
+  text-align: center;
+  border-top: dotted; 
+}
+
+
+
+#mainDiv{
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+#hideShow {
+  height: 5em;
+  width: 5em;
+}
+
+#topBar{
+   display: flex; 
+   flex-direction: row; 
+}
+
+
+.nodeview {
+  word-wrap: break-word;         
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  flex: 1;
+  border-left: solid 1px;
+  border-bottom: solid 1px;
+}
+
+.ql-editor, .quill, .quillDiv  {
+  height: 100%
+}
+
+#rawHtmlDiv{
+  white-space: pre-line;
+  
+}
+
+.noteList {
+  margin-right: 5px;
+  border: solid 1px;
+}
+
+#header {
+  border-top: 1px solid ;
+  border-bottom: 1px solid ;
+  padding-bottom: 5px;
+}
+
+.headerButton {
+  float: right;
+}
