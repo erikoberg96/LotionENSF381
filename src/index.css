@@ -20,7 +20,7 @@ a {
 }
 
 .items {
-  height: 25px;
+  /* height: 25px; */
   /* max-width: 10px; */
   text-align: center;
   border-top: dotted; 
@@ -41,9 +41,9 @@ li {
   width: 5em;
 }
 
-#topBar{
+.topBar{
    display: flex; 
-   flex-direction: row; 
+   /* flex-direction: row;  */
 }
 
 

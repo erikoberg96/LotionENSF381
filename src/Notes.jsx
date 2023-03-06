@@ -2,8 +2,6 @@ import NoteList from "./NoteList";
 import { useState,useEffect } from 'react';
 import { Outlet, useLocation } from "react-router";
 
-
-
 const Notes = () => {
     const location = useLocation();
     const listInStorage = JSON.parse(localStorage.getItem("noteList"));
@@ -23,7 +21,6 @@ const Notes = () => {
         <h1 >Lotion</h1>
         </div>          
 
-        
         <div id="mainDiv">
             <div className="noteList">
             {show ? <NoteList  notes={list}/> : null}   

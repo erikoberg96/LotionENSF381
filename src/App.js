@@ -2,7 +2,6 @@ import Notes from "./Notes";
 import { Route,Routes,BrowserRouter } from 'react-router-dom';
 import ViewNote from "./ViewNote";
 import EditList from "./EditList";
-// import { Layout } from './components/Layout';
 
 function App() {
   return(

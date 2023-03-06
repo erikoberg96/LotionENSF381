@@ -10,7 +10,15 @@ const NoteList = props => {
             </div>
             
             {props.notes.length !== 0 ? props.notes.map((e,i) => {
-                return <p class="items" id={i} key={e.id}><Link to={`/notes/${i+1}`} >{e.title}</Link></p>
+                return (
+                    <div id={i} key={e.id} className="items" >
+                    <Link  to={`/notes/${i+1}`} >
+                    <p >{e.title}</p>
+                    {e.title != "" && <p>{e.time}</p>}
+                    {e.text != "" && <div dangerouslySetInnerHTML={{__html: e.text.slice(0,25) }}></div>}
+                   
+                    </Link>
+                    </div>)
             }) : <p>There are no notes</p>}
         </div>
     )
