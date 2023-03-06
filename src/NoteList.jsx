@@ -14,8 +14,8 @@ const NoteList = props => {
                     <div id={i} key={e.id} className="items" >
                     <Link  to={`/notes/${i+1}`} >
                     <p >{e.title}</p>
-                    {e.title != "" && <p>{e.time}</p>}
-                    {e.text != "" && <div dangerouslySetInnerHTML={{__html: e.text.slice(0,25) }}></div>}
+                    {e.title !== "" && <p>{e.time}</p>}
+                    {e.text !== "" && <div dangerouslySetInnerHTML={{__html: e.text.slice(0,25) }}></div>}
                    
                     </Link>
                     </div>)
